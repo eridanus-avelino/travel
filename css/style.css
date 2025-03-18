@@ -1,0 +1,515 @@
+/* 
+=======================================================
+JCI DAGUPAN Website - Main Stylesheet
+=======================================================
+*/
+
+/* 
+-------------------------------------------------------
+Global Styles
+-------------------------------------------------------
+*/
+:root {
+    --primary-color: #003B7A;    /* JCI Blue */
+    --secondary-color: #FFBD00;  /* JCI Gold/Yellow */
+    --dark-color: #333333;
+    --light-color: #f8f9fa;
+    --text-color: #4a4a4a;
+    --white-color: #ffffff;
+    --gray-color: #6c757d;
+    --light-gray: #e9ecef;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #002b58;
+    border-color: #002b58;
+}
+
+.btn-outline-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-color);
+}
+
+/* 
+-------------------------------------------------------
+Header & Navigation Styles
+-------------------------------------------------------
+*/
+.top-header {
+    font-size: 0.9rem;
+}
+
+.contact-info i, .social-links i {
+    color: var(--primary-color);
+}
+
+.social-links .social-link {
+    display: inline-block;
+    margin-left: 15px;
+    color: var(--gray-color);
+}
+
+.social-links .social-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* 
+-------------------------------------------------------
+Hero Section Styles
+-------------------------------------------------------
+*/
+.hero-section {
+    padding: 100px 0;
+    background-color: var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.jci-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--secondary-color);
+}
+
+/* 
+-------------------------------------------------------
+Mission Section Styles
+-------------------------------------------------------
+*/
+.mission-section {
+    background-color: white;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 20px auto;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* 
+-------------------------------------------------------
+What We Do Section Styles
+-------------------------------------------------------
+*/
+.feature-icon {
+    color: var(--primary-color);
+}
+
+.card {
+    border: 2px solid var(--primary-color); /* Add blue border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+-------------------------------------------------------
+Testimonial Section Styles
+-------------------------------------------------------
+*/
+.testimonial-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* 
+-------------------------------------------------------
+Events Section Styles
+-------------------------------------------------------
+*/
+.event-card {
+    display: flex;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-location {
+    color: var(--gray-color);
+    margin-bottom: 10px;
+}
+
+/* 
+-------------------------------------------------------
+Page Header Styles
+-------------------------------------------------------
+*/
+.page-header {
+    background-color: var(--light-color);
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* 
+-------------------------------------------------------
+About Page Styles
+-------------------------------------------------------
+*/
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.jci-logo-large {
+    text-align: center;
+}
+
+.value-card, .team-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover, .team-card:hover {
+    transform: translateY(-10px);
+}
+
+.creed-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.creed-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline-content {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    position: relative;
+    margin-left: 40px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content .year {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+    .timeline:before {
+        left: 50%;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-content {
+        width: 45%;
+        margin-left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content {
+        float: left;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        float: right;
+        margin-right: 0;
+    }
+    
+    .timeline-item:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+/* 
+-------------------------------------------------------
+Footer Styles
+-------------------------------------------------------
+*/
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer-heading {
+    color: var(--white-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.footer-links, .footer-contact {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li, .footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-contact li {
+    color: #ccc;
+    padding-left: 25px;
+    position: relative;
+}
+
+.footer-contact i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--secondary-color);
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+/* 
+-------------------------------------------------------
+Responsive Styles
+-------------------------------------------------------
+*/
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+    }
+    
+    .section-title {
+        text-align: center;
+    }
+    
+    .footer-heading {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-info span {
+        margin-bottom: 5px;
+    }
+    
+    .social-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
